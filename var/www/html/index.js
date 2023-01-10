@@ -87,5 +87,5 @@ app.delete('/api/persons/:id', (request, response) => {
     response.status(204).end()
 })
 
-const PORT = 61580
+const PORT = process.env.PORT || 61580
 app.listen(PORT, () => {})
